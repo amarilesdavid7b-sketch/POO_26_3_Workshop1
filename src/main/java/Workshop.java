@@ -256,7 +256,6 @@ public String jugarPiedraPapelTijeraLagartoSpock(String j1, String j2) {
     }
     return ganaJ1 ? "Jugador 1" : "Jugador 2";
 }
-}
     public double areaCirculo(double radio) {
     return Math.PI * Math.pow(radio, 2);
     }
