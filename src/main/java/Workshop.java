@@ -238,7 +238,7 @@ public int[] serieFibonacci(int n) {
     }
 
     // Método para el juego de piedra, papel, tijera, lagarto, Spock
-public String pptls2(String[] game) {
+    public String jugarPiedraPapelTijeraLagartoSpock(String[] game) {
     if (game == null || game.length < 2) return "Error";
     String j1 = game[0].toLowerCase();
     String j2 = game[1].toLowerCase();
