@@ -108,17 +108,14 @@ public int[] serieFibonacci(int n) {
     
     return menor;
 }
-    
-
-    // Método que busca un elemento en un arreglo
     public boolean buscarElemento(int[] arreglo, int elemento) {
-    for (int i = 0; i < arreglo.length; i++) {
-        if (arreglo[i] == elemento) {
-            return true;
-        }
-    
-    return false;
-}
+        for (int i = 0; i < arreglo.length; i++) {
+            if (arreglo[i] == elemento) {
+                return true;
+            }
+        } 
+        return false;
+    }
     
 
     // Método que invierte un arreglo
@@ -233,7 +230,7 @@ public int[] serieFibonacci(int n) {
     }
     // Método que convierte un número en su representación binaria
       public String convertirABinario(int numero) {
-    return Integer.toBinaryString(numero)
+    return Integer.toBinaryString(numero);
     }
 
     // Método que convierte un número en su representación hexadecimal
