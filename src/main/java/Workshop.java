@@ -255,25 +255,6 @@ public String pptls2(String[] game) {
     }
     return ganaJ1 ? "Jugador 1" : "Jugador 2";
     }
-public String pptls2(String[] game) {
-    String j1 = game[0];
-    String j2 = game[1];
-
-    if (j1.equals(j2)) {
-        return "Empate";
-    }
-
-    boolean ganaJ1 = false;
-    switch (j1) {
-        case "R": ganaJ1 = j2.equals("L") || j2.equals("S"); break;
-        case "P": ganaJ1 = j2.equals("R") || j2.equals("V"); break;
-        case "S": ganaJ1 = j2.equals("P") || j2.equals("L"); break;
-        case "L": ganaJ1 = j2.equals("V") || j2.equals("P"); break;
-        case "V": ganaJ1 = j2.equals("S") || j2.equals("R"); break;
-    }
-
-    return ganaJ1 ? "Jugador 1" : "Jugador 2";
-    }
     public double areaCirculo(double radio) {
     return Math.PI * Math.pow(radio, 2);
     }
@@ -292,7 +273,5 @@ public String zoodiac(int day, int month) {
     if ((month == 2 && day >= 19) || (month == 3 && day <= 20)) return "Piscis";
     return "Fecha invalida";
     }
-
-
 }
 
