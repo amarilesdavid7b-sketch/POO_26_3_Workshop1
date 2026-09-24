@@ -24,7 +24,8 @@ public class Workshop {
     for (int i = 0; i < limite; i++) {
         resultado[i] = numero * (i + 1);
     }
-
+    return resultado;
+}
     // Método que calcula el factorial de un número entero
     public long factorial(int n) {
     if (n < 0) {
@@ -46,8 +47,6 @@ public class Workshop {
     }
     return true;
 }
-    
-
     // Método que genera una serie de Fibonacci
 public int[] serieFibonacci(int n) {
     if (n < 0) {
