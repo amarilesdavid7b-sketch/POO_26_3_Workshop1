@@ -34,7 +34,7 @@ public class Workshop {
     for (int i = 1; i <= n; i++) {
         fact *= i;
     }
--    return fact;
+    return fact;
     }
     
 
@@ -105,7 +105,7 @@ public int[] serieFibonacci(int n) {
         if (arreglo[i] < menor) {
             menor = arreglo[i];
         }
-    
+    }
     return menor;
 }
     public boolean buscarElemento(int[] arreglo, int elemento) {
