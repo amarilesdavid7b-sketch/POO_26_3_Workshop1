@@ -238,13 +238,14 @@ public int[] serieFibonacci(int n) {
     }
 
     // Método para el juego de piedra, papel, tijera, lagarto, Spock
-    public String jugarPiedraPapelTijeraLagartoSpock(String[] game) {
-    if (game == null || game.length < 2) return "Error";
-    String j1 = game[0].toLowerCase();
-    String j2 = game[1].toLowerCase();
-    
+  // Método para el juego de piedra, papel, tijera, lagarto, Spock
+public String jugarPiedraPapelTijeraLagartoSpock(String j1, String j2) {
+    if (j1 == null || j2 == null) return "Error";
+    j1 = j1.toLowerCase();
+    j2 = j2.toLowerCase();
+
     if (j1.equals(j2)) return "Empate";
-    
+
     boolean ganaJ1 = false;
     switch (j1) {
         case "piedra": ganaJ1 = j2.equals("tijera") || j2.equals("lagarto"); break;
@@ -254,25 +255,7 @@ public int[] serieFibonacci(int n) {
         case "spock": ganaJ1 = j2.equals("tijera") || j2.equals("piedra"); break;
     }
     return ganaJ1 ? "Jugador 1" : "Jugador 2";
-    }
-    public String pptls2(String[] game) {
-    String j1 = game[0];
-    String j2 = game[1];
-
-    if (j1.equals(j2)) {
-        return "Empate";
-    }
-
-    boolean ganaJ1 = false;
-    switch (j1) {
-        case "R": ganaJ1 = j2.equals("L") || j2.equals("S"); break;
-        case "P": ganaJ1 = j2.equals("R") || j2.equals("V"); break;
-        case "S": ganaJ1 = j2.equals("P") || j2.equals("L"); break;
-        case "L": ganaJ1 = j2.equals("V") || j2.equals("P"); break;
-        case "V": ganaJ1 = j2.equals("S") || j2.equals("R"); break;
-    }
-
-    return ganaJ1 ? "Jugador 1" : "Jugador 2";
+}
 }
     public double areaCirculo(double radio) {
     return Math.PI * Math.pow(radio, 2);
